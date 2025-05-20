@@ -2,139 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ochsner Philanthropy Newsletter</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      max-width: 620px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      overflow: hidden;
-    }
-    .logo {
-      width: 180px;
-      display: block;
-      margin: 20px auto;
-    }
-    .featured-image {
-      width: 100%;
-      display: block;
-      height: auto;
-    }
-    .section {
-      padding: 24px;
-      color: #1b3e6f;
-    }
-    .section-title {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-    .text {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .divider {
-      height: 1px;
-      background-image: linear-gradient(to right, transparent, #0072C2, transparent);
-      border: none;
-      margin: 32px auto;
-      width: 90%;
-    }
-    .button-wrapper {
-      text-align: center;
-      margin: 24px 0;
-    }
-    .button {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #002d5d;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid #002d5d;
-      border-radius: 0;
-      text-transform: capitalize;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.03); }
-      100% { transform: scale(1); }
-    }
-    .button:hover {
-      background-color: #1b3e6f;
-    }
-    .footer {
-      font-size: 14px;
-      color: #1b3e6f;
-      padding: 24px;
-      text-align: center;
-    }
-    .footer a {
-      color: #1b3e6f;
-      text-decoration: underline;
-      margin: 0 10px;
-    }
-    .video-embed {
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      margin: 0 auto 24px;
-      display: block;
-    }
-    .tooltip {
-      position: relative;
-      cursor: help;
-      border-bottom: 1px dotted #0072C2;
-    }
-    .tooltip:hover::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      left: 0;
-      top: 125%;
-      background: #002d5d;
-      color: #fff;
-      padding: 8px;
-      font-size: 13px;
-      border-radius: 4px;
-      white-space: nowrap;
-      z-index: 10;
-    }
-    .countdown {
-      font-weight: bold;
-      color: #002d5d;
-      text-align: center;
-      font-size: 18px;
-      margin-top: 16px;
-    }
+    body { margin: 0; padding: 0; background-color: #f8f9fa; font-family: Arial, sans-serif; }
+    .container { max-width: 620px; margin: 0 auto; background-color: #ffffff; overflow: hidden; }
+    .logo { width: 180px; display: block; margin: 20px auto; }
+    .featured-image { width: 100%; display: block; height: auto; }
+    .section { padding: 24px; color: #1b3e6f; }
+    .section-title { font-size: 22px; font-weight: bold; margin-bottom: 12px; text-align: center; }
+    .text { font-size: 16px; line-height: 1.6; }
+    .divider { height: 1px; background-image: linear-gradient(to right, transparent, #0072C2, transparent); border: none; margin: 32px auto; width: 90%; }
+    .button-wrapper { text-align: center; margin: 24px 0; }
+    .button { display: inline-block; padding: 14px 28px; background-color: #002d5d; color: #ffffff; text-decoration: none; font-weight: bold; border: 2px solid #002d5d; border-radius: 0; text-transform: capitalize; animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); } }
+    .button:hover { background-color: #1b3e6f; }
+    .footer { font-size: 14px; color: #1b3e6f; padding: 24px; text-align: center; }
+    .footer a { color: #1b3e6f; text-decoration: underline; margin: 0 10px; }
+    .video-embed { width: 100%; max-width: 560px; height: 315px; margin: 0 auto 24px; display: block; }
+    .tooltip { position: relative; cursor: help; border-bottom: 1px dotted #0072C2; }
+    .tooltip:hover::after { content: attr(data-tooltip); position: absolute; left: 0; top: 125%; background: #002d5d; color: #fff; padding: 8px; font-size: 13px; border-radius: 4px; white-space: nowrap; z-index: 10; }
+    .countdown { font-weight: bold; color: #002d5d; text-align: center; font-size: 18px; margin-top: 16px; }
+    .quote-box { font-style: italic; background: #f4f9ff; border-left: 4px solid #0072C2; padding: 16px; margin: 16px 0; }
+    .donor-highlight { background-color: #e0f0ff; padding: 20px; border: 1px dashed #0072C2; margin-top: 20px; }
+    .social-share { text-align: center; padding: 16px 0; }
+    .social-share a { margin: 0 8px; text-decoration: none; color: #0072C2; font-weight: bold; }
   </style>
 </head>
 <body>
   <div class="container">
-    <a href="https://www.ochsner.org/giving/donate" target="_blank">
-      <img class="logo" src="https://giving.ochsner.org/images/content/pagebuilder/oh_philanthropy_logo_color-543x275-cd48c5cf-4977-41d8-91.jpg" alt="Ochsner Philanthropy Logo" />
-    </a>
-    <a href="https://www.ochsner.org/giving/donate" target="_blank">
-      <img class="featured-image" src="https://giving.ochsner.org/images/content/pagebuilder/Ochsner_Email_images_600x300__6_.png" alt="Featured Banner" />
-    </a>
+    <a href="https://www.ochsner.org/giving/donate" target="_blank"><img class="logo" src="https://giving.ochsner.org/images/content/pagebuilder/oh_philanthropy_logo_color-543x275-cd48c5cf-4977-41d8-91.jpg" alt="Ochsner Philanthropy Logo" /></a>
+    <a href="https://www.ochsner.org/giving/donate" target="_blank"><img class="featured-image" src="https://giving.ochsner.org/images/content/pagebuilder/Ochsner_Email_images_600x300__6_.png" alt="Featured Banner" /></a>
 
     <div class="section">
       <div class="section-title">How Your Gift Helped Baby Jude Breathe on His Own</div>
       <iframe class="video-embed" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Baby Jude Story" frameborder="0" allowfullscreen></iframe>
-      <div class="text">
-        Your <span class="tooltip" data-tooltip="Funds one day of neonatal intensive care">donation of $100</span> gave Baby Jude a second chance at life.
-      </div>
-      <div class="button-wrapper">
-        <a class="button" href="#">Read Full Story</a>
-      </div>
+      <div class="text">Your <span class="tooltip" data-tooltip="Funds one day of neonatal intensive care">donation of $100</span> gave Baby Jude a second chance at life.</div>
+      <div class="button-wrapper"><a class="button" href="#">Read Full Story</a></div>
     </div>
 
     <hr class="divider"/>
@@ -153,22 +57,47 @@
     <hr class="divider"/>
 
     <div class="section">
-      <div class="section-title">Get Involved</div>
-      <div class="text">Join us at the 2025 Healing Gala or support the Innovation Fund to shape the future of healthcare at Ochsner.</div>
-      <div class="countdown" id="countdown">📅 Only X days left until the Healing Gala!</div>
-      <div class="button-wrapper">
-        <a class="button" href="https://www.ochsner.org/giving/donate" target="_blank">Donate or RSVP</a>
-      </div>
+      <div class="section-title">Gratitude in Action</div>
+      <div class="quote-box">“We give because Ochsner gave us our daughter back.” – The Boudreaux Family</div>
     </div>
 
     <hr class="divider"/>
 
+    <div class="section">
+      <div class="section-title">Mission Forward: Neurosciences Center</div>
+      <div class="text">Tour our new Neurosciences Center, built by donors like you. This facility is transforming patient care for stroke and neurodegenerative diseases across the Gulf South.</div>
+      <div class="button-wrapper"><a class="button" href="#">Explore the Center</a></div>
+    </div>
+
+    <hr class="divider"/>
+
+    <div class="section">
+      <div class="section-title">Get Involved</div>
+      <div class="text">Join us at the 2025 Healing Gala or support the Innovation Fund to shape the future of healthcare at Ochsner.</div>
+      <div class="countdown" id="countdown">📅 Only X days left until the Healing Gala!</div>
+      <div class="button-wrapper"><a class="button" href="https://www.ochsner.org/giving/donate" target="_blank">Donate or RSVP</a></div>
+    </div>
+
+    <hr class="divider"/>
+
+    <div class="section donor-highlight">
+      <div class="section-title">Donor Spotlight: Champions of Care</div>
+      <div class="text">This month, we honor Sarah Landry, a NICU nurse who became a donor after seeing firsthand the impact of your support.</div>
+    </div>
+
+    <hr class="divider"/>
+
+    <div class="social-share">
+      <p>💙 Share this story:</p>
+      <a href="#">Facebook</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+
     <div class="footer">
       <strong>Thank you for being part of the Ochsner community.</strong><br/>
       Your generosity is transforming healthcare and lives across Louisiana and beyond.<br/>
-      <a href="#">Unsubscribe</a> |
-      <a href="#">Update Preferences</a> |
-      <a href="#">Contact Us</a>
+      <a href="#">Unsubscribe</a> | <a href="#">Update Preferences</a> | <a href="#">Contact Us</a>
     </div>
   </div>
 
@@ -180,17 +109,9 @@
       const now = new Date();
       const diff = targetDate - now;
       const days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
-
       const locale = navigator.language || 'en-US';
-      const eventDate = targetDate.toLocaleDateString(locale, {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-
-      countdownElement.textContent =
-        `📅 Only ${days} day${days !== 1 ? 's' : ''} left until the Healing Gala on ${eventDate}!`;
+      const eventDate = targetDate.toLocaleDateString(locale, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      countdownElement.textContent = `📅 Only ${days} day${days !== 1 ? 's' : ''} left until the Healing Gala on ${eventDate}!`;
     }
 
     updateCountdown();
